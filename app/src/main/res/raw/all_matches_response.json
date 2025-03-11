@@ -1,0 +1,391 @@
+{
+  "data": {
+    "profiles": [
+      {
+        "profileId": "T9286253",
+        "name": "Laxmi Aparna Ashitha",
+        "imageUrl": "https://t-imgs.matrimonycdn.com/photos/2024/08/22/21/T9286253_klNKf_2894_TL_VP.jpg",
+        "address": {
+          "city": "NTR",
+          "state": "ANDHRA_PRADESH",
+          "country": "INDIA"
+        },
+        "profileCreatedBy": "PARENTS",
+        "lastActiveTime": "2025-03-07T00:24:01.189Z",
+        "ageYear": 23,
+        "height": "FT5_IN3_160CM",
+        "education": "B_TECH",
+        "occupation": "SOFTWARE_PROFESSIONAL",
+        "income": "RS_5_LAKH",
+        "photoVisibility": "TO_ALL",
+        "photoCount": 2,
+        "profileVideoPreview": null,
+        "isNewlyJoined": false,
+        "isShortlistedByYou": false,
+        "isPaid": false,
+        "isPhotoVerified": false,
+        "isIdVerified": true,
+        "phoneVisibility": "TO_ALL_PAID",
+        "onlineStatus": "OFFLINE",
+        "caste": "ARYA_VYSYA",
+        "subcaste": null
+      },
+      {
+        "profileId": "T9286253",
+        "name": "Laxmi Aparna Ashitha",
+        "imageUrl": "https://t-imgs.matrimonycdn.com/photos/2024/08/22/21/T9286253_klNKf_2894_TL_VP.jpg",
+        "address": {
+          "city": "NTR",
+          "state": "ANDHRA_PRADESH",
+          "country": "INDIA"
+        },
+        "profileCreatedBy": "PARENTS",
+        "lastActiveTime": "2025-03-07T00:24:01.189Z",
+        "ageYear": 23,
+        "height": "FT5_IN3_160CM",
+        "education": "B_TECH",
+        "occupation": "SOFTWARE_PROFESSIONAL",
+        "income": "RS_5_LAKH",
+        "photoVisibility": "TO_ALL",
+        "photoCount": 2,
+        "profileVideoPreview": null,
+        "isNewlyJoined": false,
+        "isShortlistedByYou": false,
+        "isPaid": false,
+        "isPhotoVerified": false,
+        "isIdVerified": true,
+        "phoneVisibility": "TO_ALL_PAID",
+        "onlineStatus": "OFFLINE",
+        "caste": "ARYA_VYSYA",
+        "subcaste": null
+      },
+      {
+        "profileId": "T9286253",
+        "name": "Laxmi Aparna Ashitha",
+        "imageUrl": "https://t-imgs.matrimonycdn.com/photos/2024/08/22/21/T9286253_klNKf_2894_TL_VP.jpg",
+        "address": {
+          "city": "NTR",
+          "state": "ANDHRA_PRADESH",
+          "country": "INDIA"
+        },
+        "profileCreatedBy": "PARENTS",
+        "lastActiveTime": "2025-03-07T00:24:01.189Z",
+        "ageYear": 23,
+        "height": "FT5_IN3_160CM",
+        "education": "B_TECH",
+        "occupation": "SOFTWARE_PROFESSIONAL",
+        "income": "RS_5_LAKH",
+        "photoVisibility": "TO_ALL",
+        "photoCount": 2,
+        "profileVideoPreview": null,
+        "isNewlyJoined": false,
+        "isShortlistedByYou": false,
+        "isPaid": false,
+        "isPhotoVerified": false,
+        "isIdVerified": true,
+        "phoneVisibility": "TO_ALL_PAID",
+        "onlineStatus": "OFFLINE",
+        "caste": "ARYA_VYSYA",
+        "subcaste": null
+      },
+      {
+        "profileId": "T9286253",
+        "name": "Laxmi Aparna Ashitha",
+        "imageUrl": "https://t-imgs.matrimonycdn.com/photos/2024/08/22/21/T9286253_klNKf_2894_TL_VP.jpg",
+        "address": {
+          "city": "NTR",
+          "state": "ANDHRA_PRADESH",
+          "country": "INDIA"
+        },
+        "profileCreatedBy": "PARENTS",
+        "lastActiveTime": "2025-03-07T00:24:01.189Z",
+        "ageYear": 23,
+        "height": "FT5_IN3_160CM",
+        "education": "B_TECH",
+        "occupation": "SOFTWARE_PROFESSIONAL",
+        "income": "RS_5_LAKH",
+        "photoVisibility": "TO_ALL",
+        "photoCount": 2,
+        "profileVideoPreview": null,
+        "isNewlyJoined": false,
+        "isShortlistedByYou": false,
+        "isPaid": false,
+        "isPhotoVerified": false,
+        "isIdVerified": true,
+        "phoneVisibility": "TO_ALL_PAID",
+        "onlineStatus": "OFFLINE",
+        "caste": "ARYA_VYSYA",
+        "subcaste": null
+      }
+    ]
+  },
+  "layout": {
+    "title": "matchesScreen",
+    "components": [
+      {
+        "type": "LazyColumn",
+        "properties": {
+          "width": "match_parent",
+          "height": "match_parent",
+          "horizontalAlignment": "CenterHorizontally",
+          "padding": 0,
+          "verticalArrangement": "Center"
+        },
+        "children": [
+          {
+            "type": "Card",
+            "properties": {
+              "width": "match_parent",
+              "height": "wrap_content",
+              "action": {
+                "type": "Navigation",
+                "destination": "view_profile",
+                "parameters": {
+                  "profileId": "{profileId}"
+                }
+              },
+              "padding": 16,
+              "elevation": 10,
+              "shape": "RoundedCornerShape",
+              "corner": 16,
+              "cardColor": "#FFFFFF"
+            },
+            "children": [
+              {
+                "type": "Column",
+                "properties": {
+                  "width": "match_parent",
+                  "height": "wrap_content",
+                  "horizontalAlignment": "Start",
+                  "padding": 16,
+                  "verticalArrangement": "Center"
+                },
+                "children": [
+                  {
+                    "type": "Image",
+                    "properties": {
+                      "url": "https://t-imgs.matrimonycdn.com/photos/2024/08/22/21/T9286253_klNKf_2894_TL_VP.jpg",
+                      "contentDescription": "{name}",
+                      "width": "match_parent",
+                      "height": "wrap_content",
+                      "contentScale": "Crop",
+                      "padding": 12,
+                      "alignment": "center",
+                      "shape": "roundedCornerShape",
+                      "corner": 12
+                    }
+                  },
+                  {
+                    "type": "Row",
+                    "properties": {
+                      "width": "match_parent",
+                      "height": "wrap_content",
+                      "horizontalArrangement": "Start",
+                      "padding": 0,
+                      "verticalAlignment": "Center"
+                    },
+                    "children": [
+                      {
+                        "type": "Icon",
+                        "properties": {
+                          "url": "https://cdn-icons-png.flaticon.com/512/847/847969.png",
+                          "contentDescription": " {isVerified}",
+                          "width": 18,
+                          "height": 18
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "properties": {
+                          "text": "ID verified",
+                          "width": "match_parent",
+                          "height": "wrap_content",
+                          "fontSize": 14,
+                          "fontWeight": "Regular",
+                          "textColor": "#2c73d2",
+                          "fontFamily": "roboto_regular",
+                          "textAlign": "center",
+                          "overflow": "clip",
+                          "softwrap": true,
+                          "maxLines": 1
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Text",
+                    "properties": {
+                      "text": "Rebecca",
+                      "width": "match_parent",
+                      "height": "wrap_content",
+                      "fontSize": 16,
+                      "fontWeight": "bold",
+                      "textColor": "#4b4453",
+                      "fontFamily": "roboto_bold",
+                      "textAlign": "center",
+                      "overflow": "clip",
+                      "softwrap": true,
+                      "maxLines": 1
+                    }
+                  },
+                  {
+                    "type": "Row",
+                    "properties": {
+                      "width": "match_parent",
+                      "height": "wrap_content",
+                      "horizontalArrangement": "Start",
+                      "padding": 0,
+                      "verticalAlignment": "Center"
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "properties": {
+                          "text": "M123456",
+                          "width": "match_parent",
+                          "height": "wrap_content",
+                          "fontSize": 14,
+                          "fontWeight": "Regular",
+                          "textColor": "#2c73d2",
+                          "fontFamily": "roboto_regular",
+                          "textAlign": "center",
+                          "overflow": "clip",
+                          "softwrap": true,
+                          "maxLines": 1
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "properties": {
+                          "text": "|",
+                          "width": "match_parent",
+                          "height": "wrap_content",
+                          "fontSize": 14,
+                          "fontWeight": "Regular",
+                          "textColor": "#2c73d2",
+                          "fontFamily": "roboto_regular",
+                          "textAlign": "center",
+                          "overflow": "clip",
+                          "softwrap": true,
+                          "maxLines": 1
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "properties": {
+                          "text": "3 mins ago",
+                          "width": "match_parent",
+                          "height": "wrap_content",
+                          "fontSize": 14,
+                          "fontWeight": "Regular",
+                          "textColor": "#2c73d2",
+                          "fontFamily": "roboto_regular",
+                          "textAlign": "center",
+                          "overflow": "clip",
+                          "softwrap": true,
+                          "maxLines": 1
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Text",
+                    "properties": {
+                      "text": "23 Yrs, 5'' 7', ARYA_VYSYA, B_TECH, SOFTWARE_DEV,ANDHRA_PRADESH.",
+                      "width": "match_parent",
+                      "height": "wrap_content",
+                      "fontSize": 14,
+                      "fontWeight": "Regular",
+                      "textColor": "#2c73d2",
+                      "fontFamily": "roboto_regular",
+                      "textAlign": "center",
+                      "overflow": "clip",
+                      "softwrap": true,
+                      "maxLines": 2
+                    }
+                  },
+                  {
+                    "type": "Row",
+                    "properties": {
+                      "width": "match_parent",
+                      "height": "wrap_content",
+                      "horizontalArrangement": "SpaceEvenly",
+                      "padding": 0,
+                      "verticalAlignment": "Center"
+                    },
+                    "children": [
+                      {
+                        "type": "Button",
+                        "properties": {
+                          "width": "wrap_content",
+                          "height": "wrap_content",
+                          "backgroundColor": "#FFFFFF",
+                          "padding": 12,
+                          "borderStroke": 1,
+                          "strokeColor": "#3C3D37",
+                          "shape": "roundedCornerShape",
+                          "corner": 12,
+                          "action": {
+                            "type": "Navigation",
+                            "destination": "profile_screen",
+                            "parameters": {
+                              "profileId": "M1234689"
+                            }
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "Text",
+                            "properties": {
+                              "text": "Don't show",
+                              "width": "match_parent",
+                              "height": "wrap_content",
+                              "fontSize": 16,
+                              "textColor": "#3C3D37",
+                              "fontWeight": "Regular"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Button",
+                        "properties": {
+                          "width": "wrap_content",
+                          "height": "wrap_content",
+                          "backgroundColor": "#E9762B",
+                          "padding": 12,
+                          "corner": 8,
+                          "shape": "roundedCornerShape",
+                          "action": {
+                            "type": "Navigation",
+                            "destination": "ProfileScreen",
+                            "parameters": {
+                              "profileId": "{profileId}"
+                            }
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "Text",
+                            "properties": {
+                              "text": "Send Interest",
+                              "width": "match_parent",
+                              "height": "wrap_content",
+                              "fontSize": 16,
+                              "textColor": "#FFFFFF",
+                              "fontWeight": "Bold"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

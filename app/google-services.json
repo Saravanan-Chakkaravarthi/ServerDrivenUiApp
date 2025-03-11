@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "849771947574",
+    "firebase_url": "https://serverdrivenapp-4f42e-default-rtdb.firebaseio.com",
+    "project_id": "serverdrivenapp-4f42e",
+    "storage_bucket": "serverdrivenapp-4f42e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849771947574:android:976277eafb1f1a8eceda97",
+        "android_client_info": {
+          "package_name": "com.serverdrivenapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-rqSOKGYXVWw1sl4TLOfR-rOlgia4skk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

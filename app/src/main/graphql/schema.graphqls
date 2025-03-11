@@ -1,0 +1,53 @@
+"""
+Indicates exactly one field must be supplied and this field must not be `null`.
+"""
+directive @oneOf on INPUT_OBJECT
+
+type Layout {
+    title: String
+    type: String
+    properties: Properties
+    children: [Component]
+}
+
+type Component {
+    type: String
+    repeatForEach: String
+    properties: Properties
+    children: [Component]
+}
+
+type Properties {
+    width: String
+    height: String
+    padding: Int
+    elevation: Int
+    cardColor: String
+    cornerRadius: Int
+    text: String
+    fontSize: Int
+    fontWeight: String
+    textColor: String
+    textAlign: String
+    url: String
+    contentScale: String
+    backgroundColor: String
+    borderColor: String
+    borderWidth: Int
+}
+
+type Profile {
+    profileId: String
+    name: String
+    imageUrl: String
+    ageYear: Int
+    height: String
+    education: String
+    occupation: String
+    caste: String
+}
+
+type Query {
+    getLayout: Layout
+    getData: [Profile]
+}
