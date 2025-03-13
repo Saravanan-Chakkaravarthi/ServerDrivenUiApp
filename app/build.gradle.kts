@@ -84,6 +84,6 @@ dependencies {
 
 apollo {
     service("service") {
-        packageName.set("com.sdui")
+        packageName.set("com.serverdrivenapp")
     }
 }

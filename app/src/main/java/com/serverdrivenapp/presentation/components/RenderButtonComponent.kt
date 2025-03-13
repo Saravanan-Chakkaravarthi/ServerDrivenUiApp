@@ -9,10 +9,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.serverdrivenapp.data.models.all_matches.MatchesComponents
+import com.serverdrivenapp.data.models.all_matches.Profiles
+import com.serverdrivenapp.navigation.handleNavigation
 import com.serverdrivenapp.utils.hexToColor
 
 @Composable
-fun RenderButtonComponent(component: MatchesComponents, navController: NavController) {
+fun RenderButtonComponent(
+    component: MatchesComponents,
+    navController: NavController,
+    profile: Profiles
+) {
     Button(
         onClick = {
             component.properties?.action?.let { action ->
@@ -44,7 +50,7 @@ fun RenderButtonComponent(component: MatchesComponents, navController: NavContro
             ) else ButtonDefaults.shape
     ) {
         component.children?.forEach { child ->
-            RenderComponent(component = child, navController = navController)
+            RenderComponent(component = child, navController = navController, profile = profile)
         }
     }
 }

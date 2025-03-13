@@ -3,7 +3,6 @@ package com.serverdrivenapp.data.models.all_matches
 import com.google.gson.annotations.SerializedName
 
 data class Matches (
-  @SerializedName("data") var data : MatchesData?,
   @SerializedName("layout") var layout : MatchesLayout?
 )
 
@@ -40,6 +39,25 @@ data class ComponentProperties(
   val backgroundColor: String?,
   val borderStroke: Int?,
   val strokeColor: String?,
+  val cardColor: String?,
+  val maxLines: Int?,
+  val softwrap: Boolean?,
+  val overflow: String?,
+  val textAlign: String?,
+  val contentAlignment: String?,
+  val alignment: String?,
+  val outerPadding: Int?,
+  val innerPadding: PaddingData?,
+
+)
+
+data class PaddingData(
+  val vertical: Int?,
+  val horizontal: Int?,
+  val start: Int?,
+  val top: Int?,
+  val bottom: Int?,
+  val end: Int?,
 )
 
 data class MatchesAction(

@@ -1,6 +1,7 @@
 package com.serverdrivenapp.presentation.components
 
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -25,8 +26,8 @@ fun RenderIconComponent(component: MatchesComponents) {
         model = ImageRequest.Builder(context)
             .data(component.properties?.url)
             .crossfade(true)
-            .placeholder(R.drawable.ic_launcher_background)
-            .error(R.drawable.ic_launcher_foreground)
+            .placeholder(R.drawable.ic_gallery)
+            .error(R.drawable.ic_gallery_error)
             .build(),
         contentDescription = component.properties?.contentDescription,
         contentScale = ContentScaleType.fromString(component.properties?.contentScale).scale,
@@ -35,5 +36,6 @@ fun RenderIconComponent(component: MatchesComponents) {
                 width = (component.properties?.width?.toInt() ?: 0).dp,
                 height = (component.properties?.height?.toInt() ?: 0).dp
             )
+            .padding((component.properties?.padding ?: 0).dp)
     )
 }

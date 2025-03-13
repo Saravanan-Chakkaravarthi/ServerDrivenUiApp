@@ -1,6 +1,5 @@
 package com.serverdrivenapp.presentation.components
 
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -13,14 +12,21 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.serverdrivenapp.R
 import com.serverdrivenapp.data.models.all_matches.MatchesComponents
+import com.serverdrivenapp.data.models.all_matches.Profiles
 
 @Composable
-fun RenderImageComponent(component: MatchesComponents) {
+fun RenderImageComponent(
+    component: MatchesComponents,
+    profile: Profiles,
+) {
     val context = LocalContext.current
-
+    val imageUrl = when(component.properties?.url) {
+        "imageUrl" -> profile.imageUrl
+        else -> component.properties?.url
+    }
     AsyncImage(
         model = ImageRequest.Builder(context)
-            .data(component.properties?.url)
+            .data(imageUrl)
             .crossfade(true)
             .placeholder(R.drawable.ic_launcher_background)
             .error(R.drawable.ic_launcher_foreground)
@@ -53,7 +59,7 @@ sealed class ContentScaleType(val scale: ContentScale) {
                 "Inside" -> Inside
                 "FillWidth" -> FillWidth
                 "FillHeight" -> FillHeight
-                else -> None
+                else -> Fit
             }
         }
     }

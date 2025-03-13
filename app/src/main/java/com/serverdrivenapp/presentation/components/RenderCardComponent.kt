@@ -10,10 +10,27 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.serverdrivenapp.data.models.all_matches.MatchesComponents
+import com.serverdrivenapp.data.models.all_matches.Profiles
+import com.serverdrivenapp.navigation.handleNavigation
+import com.serverdrivenapp.utils.hexToColor
 
 @Composable
-fun RenderCardComponent(component: MatchesComponents, navController: NavController) {
+fun RenderCardComponent(
+    component: MatchesComponents,
+    navController: NavController,
+    profiles: Profiles
+) {
     Card(
+        onClick = {
+            component.properties?.action?.let { action ->
+                if (action.type == "Navigation") {
+                    handleNavigation(
+                        action = action,
+                        navController = navController
+                    )
+                }
+            }
+        },
         modifier = Modifier
             .widthComponent(input = component.properties?.width)
             .heightComponent(input = component.properties?.height)
@@ -22,10 +39,10 @@ fun RenderCardComponent(component: MatchesComponents, navController: NavControll
         elevation = CardDefaults.cardElevation(
             defaultElevation = component.properties?.elevation?.dp ?: 0.dp
         ),
-        colors = CardDefaults.cardColors(containerColor = Color.Cyan)
+        colors = CardDefaults.cardColors(containerColor = hexToColor(component.properties?.cardColor))
     ) {
         component.children?.forEach { child ->
-            RenderComponent(component = child, navController = navController)
+            RenderComponent(component = child, navController = navController, profile = profiles)
         }
     }
 }

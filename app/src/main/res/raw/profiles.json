@@ -1,0 +1,93 @@
+{
+  "data": {
+    "profiles": [
+      {
+        "profileId": "T9286253",
+        "name": "Laxmi Aparna Ashitha",
+        "imageUrl": "https://t-imgs.matrimonycdn.com/photos/2024/08/22/21/T9286253_klNKf_2894_TL_VP.jpg",
+        "address": {
+          "city": "NTR",
+          "state": "ANDHRA_PRADESH",
+          "country": "INDIA"
+        },
+        "profileCreatedBy": "PARENTS",
+        "lastActiveTime": "2025-03-13T01:46:01.293Z",
+        "ageYear": 23,
+        "height": "5' 3'",
+        "education": "B_TECH",
+        "occupation": "SOFTWARE_PROFESSIONAL",
+        "income": "RS_5_LAKH",
+        "photoVisibility": "TO_ALL",
+        "photoCount": 2,
+        "profileVideoPreview": null,
+        "isNewlyJoined": false,
+        "isShortlistedByYou": false,
+        "isPaid": false,
+        "isPhotoVerified": false,
+        "isIdVerified": true,
+        "phoneVisibility": "TO_ALL_PAID",
+        "onlineStatus": "OFFLINE",
+        "caste": "ARYA_VYSYA",
+        "subcaste": null
+      },
+      {
+        "profileId": "R5939406",
+        "name": "Sayali Sunil Ghorpade",
+        "imageUrl": "https://r-imgs.matrimonycdn.com/photos/2025/02/27/14/R5939406_REaGd_9365_TL_VP.jpg",
+        "address": {
+          "city": "SATARA",
+          "state": "MAHARASHTRA",
+          "country": "INDIA"
+        },
+        "profileCreatedBy": "PARENTS",
+        "lastActiveTime": "2025-03-12T06:02:16.351Z",
+        "ageYear": 23,
+        "height": "4' 11''",
+        "education": "BCA",
+        "occupation": "Not working",
+        "income": "RS_5_LAKH",
+        "photoVisibility": "TO_ALL",
+        "photoCount": 2,
+        "profileVideoPreview": null,
+        "isNewlyJoined": false,
+        "isShortlistedByYou": false,
+        "isPaid": false,
+        "isPhotoVerified": false,
+        "isIdVerified": true,
+        "phoneVisibility": "TO_ALL_PAID",
+        "onlineStatus": "OFFLINE",
+        "caste": "ARYA_VYSYA",
+        "subcaste": null
+      },
+      {
+        "profileId": "T8195154",
+        "name": "Thanmai",
+        "imageUrl": "https://t-imgs.matrimonycdn.com/photos/2023/03/15/17/T8195154_TSNEn_97653_TL_VP.jpg",
+        "address": {
+          "city": "MIRYALGUDA",
+          "state": "TELANGANA",
+          "country": "INDIA"
+        },
+        "profileCreatedBy": "PARENTS",
+        "lastActiveTime": "2025-03-09T18:49:30.633Z",
+        "ageYear": 23,
+        "height": "4' 11''",
+        "education": "BCA",
+        "occupation": "Not working",
+        "income": "RS_5_LAKH",
+        "photoVisibility": "TO_ALL",
+        "photoCount": 2,
+        "profileVideoPreview": null,
+        "isNewlyJoined": false,
+        "isShortlistedByYou": false,
+        "isPaid": false,
+        "isPhotoVerified": false,
+        "isIdVerified": true,
+        "phoneVisibility": "TO_ALL_PAID",
+        "onlineStatus": "OFFLINE",
+        "caste": "ARYA_VYSYA",
+        "subcaste": null
+      }
+    ]
+  }
+}

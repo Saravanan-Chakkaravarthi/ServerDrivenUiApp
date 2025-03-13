@@ -1,5 +1,12 @@
 package com.serverdrivenapp.data.models.all_matches
 
+import com.google.gson.annotations.SerializedName
+
+
+data class ProfileResponse(
+    @SerializedName("data") var data : MatchesData?,
+)
+
 data class MatchesData(
     val profiles: List<Profiles>?,
 )

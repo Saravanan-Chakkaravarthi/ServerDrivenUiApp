@@ -1,4 +1,4 @@
-package com.serverdrivenapp.presentation.components
+package com.serverdrivenapp.navigation
 
 import androidx.navigation.NavController
 import com.serverdrivenapp.data.models.all_matches.ActionParameter
