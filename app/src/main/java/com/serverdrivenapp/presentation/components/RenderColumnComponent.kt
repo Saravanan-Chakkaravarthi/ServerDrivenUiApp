@@ -19,7 +19,7 @@ fun RenderColumnComponent(
         modifier = Modifier
             .widthComponent(input = component.properties?.width)
             .heightComponent(input = component.properties?.height)
-            .padding(all = component.properties?.padding?.dp ?: 0.dp),
+            .applyPadding(component.properties?.innerPadding),
         verticalArrangement = VerticalArrangement.fromString(
             value = component.properties?.verticalArrangement).arrangement,
         horizontalAlignment = HorizontalAlignment.fromString(

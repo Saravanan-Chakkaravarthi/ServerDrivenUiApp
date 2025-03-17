@@ -21,7 +21,7 @@ fun RenderImageComponent(
 ) {
     val context = LocalContext.current
     val imageUrl = when(component.properties?.url) {
-        "imageUrl" -> profile.imageUrl
+        "photo" -> profile.imageUrl
         else -> component.properties?.url
     }
     AsyncImage(
@@ -36,6 +36,7 @@ fun RenderImageComponent(
         modifier = Modifier
             .widthComponent(input = component.properties?.width)
             .heightComponent(input = component.properties?.height)
+//            .applyPadding(component.properties?.innerPadding)
             .clip(RoundedCornerShape(component.properties?.corner?.dp ?: 0.dp)),
         alignment = Alignment.Center
     )

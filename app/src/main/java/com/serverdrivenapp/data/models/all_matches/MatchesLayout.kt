@@ -2,7 +2,7 @@ package com.serverdrivenapp.data.models.all_matches
 
 import com.google.gson.annotations.SerializedName
 
-data class Matches (
+data class MatchesLayoutResponse (
   @SerializedName("layout") var layout : MatchesLayout?
 )
 
@@ -13,6 +13,7 @@ data class MatchesLayout(
 
 data class MatchesComponents(
   val type: String?,
+  val componentName: String?,
   val properties: ComponentProperties?,
   val children: List<MatchesComponents>?,
 )
@@ -46,12 +47,13 @@ data class ComponentProperties(
   val textAlign: String?,
   val contentAlignment: String?,
   val alignment: String?,
-  val outerPadding: Int?,
+  val outerPadding: PaddingData?,
   val innerPadding: PaddingData?,
 
 )
 
 data class PaddingData(
+  val all: Int?,
   val vertical: Int?,
   val horizontal: Int?,
   val start: Int?,

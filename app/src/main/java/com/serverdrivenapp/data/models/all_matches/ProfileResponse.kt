@@ -12,10 +12,10 @@ data class MatchesData(
 )
 
 data class Profiles(
-    val profileId: String?,
+    @SerializedName(value = "id") val profileId: String?,
     val name: String?,
-    val imageUrl: String?,
-    val address: Address?,
+    @SerializedName(value = "photo") val imageUrl: String?,
+    @SerializedName(value = "location") val address: Address?,
     val profileCreatedBy: String?,
     val lastActiveTime: String?,
     val ageYear: Int?,

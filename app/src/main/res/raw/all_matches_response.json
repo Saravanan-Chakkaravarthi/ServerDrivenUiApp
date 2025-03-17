@@ -7,16 +7,19 @@
         "properties": {
           "width": "match_parent",
           "height": "wrap_content",
-          "padding": 16,
+          "innerPadding": {
+            "horizontal": 16,
+            "vertical": 6
+          },
           "elevation": 10,
           "shape": "RoundedCornerShape",
           "corner": 16,
-          "cardColor": "#FDFBEE",
+          "cardColor": "#FFFFFF",
           "action": {
             "type": "Navigation",
             "destination": "profile_screen",
             "parameters": {
-              "profileId": "id"
+              "id": "id"
             }
           }
         },
@@ -27,166 +30,334 @@
               "width": "match_parent",
               "height": "wrap_content",
               "horizontalAlignment": "Start",
-              "padding": 16,
+              "innerPadding": {
+                "all": 16
+              },
               "verticalArrangement": "Center"
             },
             "children": [
               {
-                "type": "Image",
+                "type": "Row",
                 "properties": {
-                  "url": "imageUrl",
-                  "contentDescription": "name",
                   "width": "match_parent",
                   "height": "wrap_content",
-                  "contentScale": "Crop",
-                  "padding": 12,
-                  "alignment": "center",
-                  "shape": "roundedCornerShape",
-                  "corner": 12
-                }
+                  "horizontalArrangement": "Center",
+                  "innerPadding": {
+                    "all": 0
+                  },
+                  "verticalAlignment": "Center"
+                },
+                "children": [
+                  {
+                    "type": "Box",
+                    "properties": {
+                      "width": "160",
+                      "height": "160",
+                      "outerPadding": {
+                        "all": 12
+                      },
+                      "alignment": "Center",
+                      "shape": "roundedCornerShape",
+                      "corner": 12
+                    },
+                    "children": [
+                      {
+                        "type": "Image",
+                        "properties": {
+                          "url": "photo",
+                          "contentDescription": "name",
+                          "width": "160",
+                          "height": "160",
+                          "contentScale": "Crop",
+                          "innerPadding": {
+                            "all": 12
+                          },
+                          "alignment": "center",
+                          "shape": "roundedCornerShape",
+                          "corner": 12
+                        }
+                      },
+                      {
+                        "type": "Row",
+                        "properties": {
+                          "width": "wrap_content",
+                          "height": "wrap_content",
+                          "innerPadding": {
+                            "vertical": 4,
+                            "horizontal": 6
+                          },
+                          "outerPadding": {
+                            "all": 8
+                          },
+                          "backgroundColor": "#FFFFFF",
+                          "shape": "roundCornerShape",
+                          "corner": 4,
+                          "borderStroke": 1,
+                          "strokeColor": "#9D9D9D",
+                          "alignment": "TopEnd",
+                          "verticalAlignment": "Center",
+                          "horizontalArrangement": "Start",
+                          "action": {
+                            "type": "Shortlist",
+                            "destination": "profile_screen",
+                            "parameters": {
+                              "id": "id"
+                            }
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "Icon",
+                            "properties": {
+                              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzO8BfF4EmII5r-orDpkcfEjIfr9PZgAEckA&s",
+                              "contentDescription": "Is verified",
+                              "width": 18,
+                              "height": 18,
+                              "innerPadding": {
+                                "all": 0
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Row",
+                        "properties": {
+                          "width": "wrap_content",
+                          "height": "wrap_content",
+                          "innerPadding": {
+                            "vertical": 4,
+                            "horizontal": 6
+                          },
+                          "outerPadding": {
+                            "all": 8
+                          },
+                          "backgroundColor": "#FFFFFF",
+                          "shape": "roundCornerShape",
+                          "corner": 4,
+                          "borderStroke": 1,
+                          "strokeColor": "#9D9D9D",
+                          "alignment": "BottomEnd",
+                          "verticalAlignment": "Center",
+                          "horizontalArrangement": "Start"
+                        },
+                        "children": [
+                          {
+                            "type": "Text",
+                            "properties": {
+                              "text": "photoCount",
+                              "width": "wrap_content",
+                              "height": "wrap_content",
+                              "fontSize": 12,
+                              "fontWeight": "Regular",
+                              "textColor": "#000000",
+                              "fontFamily": "roboto_regular",
+                              "textAlign": "center",
+                              "overflow": "clip",
+                              "softwrap": true,
+                              "maxLines": 1
+                            }
+                          },
+                          {
+                            "type": "Spacer",
+                            "properties": {
+                              "width": "4",
+                              "height": "wrap_content"
+                            }
+                          },
+                          {
+                            "type": "Icon",
+                            "properties": {
+                              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvevZW734M4wZbtKh6gguCmvEM5aRLjYuSQ&s",
+                              "contentDescription": "",
+                              "width": 18,
+                              "height": 18,
+                              "innerPadding": {
+                                "all": 0
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Row",
+                        "properties": {
+                          "width": "wrap_content",
+                          "height": "wrap_content",
+                          "outerPadding": {
+                            "all": 8
+                          },
+                          "alignment": "BottomStart",
+                          "verticalAlignment": "CenterVertically",
+                          "horizontalArrangement": "Start"
+                        },
+                        "children": [
+                          {
+                            "type": "Icon",
+                            "properties": {
+                              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8hT5LMF84ip3DJ2AVAXm41JxPS-MkN_Ebg&s",
+                              "contentDescription": "Photo Verified",
+                              "width": 18,
+                              "height": 18,
+                              "innerPadding": {
+                                "all": 0
+                              }
+                            }
+                          },
+                          {
+                            "type": "Spacer",
+                            "properties": {
+                              "width": "4",
+                              "height": "wrap_content"
+                            }
+                          },
+                          {
+                            "type": "Text",
+                            "properties": {
+                              "text": "Photo Verified",
+                              "width": "wrap_content",
+                              "height": "wrap_content",
+                              "fontSize": 12,
+                              "fontWeight": "Regular",
+                              "textColor": "#FFFFFF",
+                              "fontFamily": "roboto_regular",
+                              "textAlign": "center",
+                              "overflow": "clip",
+                              "softwrap": true,
+                              "maxLines": 1
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+
+                  {
+                    "type": "Spacer",
+                    "properties": {
+                      "width": "10",
+                      "height": "wrap_content"
+                    }
+                  },
+                  {
+                    "type": "Column",
+                    "properties": {
+                      "width": "match_parent",
+                      "height": "wrap_content",
+                      "horizontalAlignment": "Start",
+                      "innerPadding": {
+                        "all": 0
+                      },
+                      "verticalArrangement": "Top"
+                    },
+                    "children": [
+                      {
+                        "type": "Row",
+                        "componentName": "idVerified",
+                        "properties": {
+                          "width": "wrap_content",
+                          "height": "wrap_content",
+                          "horizontalArrangement": "Center",
+                          "innerPadding": {
+                            "all": 0
+                          },
+                          "verticalAlignment": "Center"
+                        },
+                        "children": [
+                          {
+                            "type": "Icon",
+                            "properties": {
+                              "url": "https://cdn-icons-png.flaticon.com/512/847/847969.png",
+                              "contentDescription": "Is verified",
+                              "width": 18,
+                              "height": 18,
+                              "innerPadding": {
+                                "all": 0
+                              }
+                            }
+                          },
+                          {
+                            "type": "Spacer",
+                            "properties": {
+                              "width": "6",
+                              "height": "wrap_content"
+                            }
+                          },
+                          {
+                            "type": "Text",
+                            "properties": {
+                              "text": "ID Verified",
+                              "width": "wrap_content",
+                              "height": "wrap_content",
+                              "fontSize": 14,
+                              "fontWeight": "Regular",
+                              "textColor": "#2c73d2",
+                              "fontFamily": "roboto_regular",
+                              "textAlign": "center",
+                              "overflow": "clip",
+                              "softwrap": true,
+                              "maxLines": 1
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Text",
+                        "properties": {
+                          "text": "name",
+                          "width": "wrap_content",
+                          "height": "wrap_content",
+                          "fontSize": 16,
+                          "fontWeight": "bold",
+                          "textColor": "#000000",
+                          "fontFamily": "roboto_bold",
+                          "textAlign": "center",
+                          "overflow": "clip",
+                          "softwrap": true,
+                          "maxLines": 1
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "properties": {
+                          "text": "id",
+                          "width": "wrap_content",
+                          "height": "wrap_content",
+                          "fontSize": 14,
+                          "fontWeight": "Regular",
+                          "textColor": "#000000",
+                          "fontFamily": "roboto_regular",
+                          "textAlign": "center",
+                          "overflow": "clip",
+                          "softwrap": true,
+                          "maxLines": 1
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "properties": {
+                          "text": "address",
+                          "width": "match_parent",
+                          "height": "wrap_content",
+                          "fontSize": 14,
+                          "fontWeight": "bold",
+                          "textColor": "#000000",
+                          "fontFamily": "roboto_regular",
+                          "textAlign": "start",
+                          "overflow": "clip",
+                          "softwrap": true,
+                          "maxLines": 6
+                        }
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "Spacer",
                 "properties": {
                   "width": "wrap_content",
-                  "height": "8"
-                }
-              },
-              {
-                "type": "Row",
-                "properties": {
-                  "width": "match_parent",
-                  "height": "wrap_content",
-                  "horizontalArrangement": "Start",
-                  "padding": 0,
-                  "verticalAlignment": "Center"
-                },
-                "children": [
-                  {
-                    "type": "Icon",
-                    "properties": {
-                      "url": "https://cdn-icons-png.flaticon.com/512/847/847969.png",
-                      "contentDescription": "Is verified",
-                      "width": 18,
-                      "height": 18,
-                      "padding": 0
-                    }
-                  },
-                  {
-                    "type": "Spacer",
-                    "properties": {
-                      "width": "6",
-                      "height": "wrap_content"
-                    }
-                  },
-                  {
-                    "type": "Text",
-                    "properties": {
-                      "text": "ID Verified",
-                      "width": "wrap_content",
-                      "height": "wrap_content",
-                      "fontSize": 14,
-                      "fontWeight": "Regular",
-                      "textColor": "#2c73d2",
-                      "fontFamily": "roboto_regular",
-                      "textAlign": "center",
-                      "overflow": "clip",
-                      "softwrap": true,
-                      "maxLines": 1
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "Text",
-                "properties": {
-                  "text": "name",
-                  "width": "wrap_content",
-                  "height": "wrap_content",
-                  "fontSize": 16,
-                  "fontWeight": "bold",
-                  "textColor": "#4b4453",
-                  "fontFamily": "roboto_bold",
-                  "textAlign": "center",
-                  "overflow": "clip",
-                  "softwrap": true,
-                  "maxLines": 1
-                }
-              },
-              {
-                "type": "Row",
-                "properties": {
-                  "width": "match_parent",
-                  "height": "wrap_content",
-                  "horizontalArrangement": "Start",
-                  "padding": 0,
-                  "verticalAlignment": "Center"
-                },
-                "children": [
-                  {
-                    "type": "Text",
-                    "properties": {
-                      "text": "id",
-                      "width": "wrap_content",
-                      "height": "wrap_content",
-                      "fontSize": 14,
-                      "fontWeight": "Regular",
-                      "textColor": "#2c73d2",
-                      "fontFamily": "roboto_regular",
-                      "textAlign": "center",
-                      "overflow": "clip",
-                      "softwrap": true,
-                      "maxLines": 1
-                    }
-                  },
-                  {
-                    "type": "Text",
-                    "properties": {
-                      "text": "|",
-                      "width": "wrap_content",
-                      "height": "wrap_content",
-                      "fontSize": 14,
-                      "fontWeight": "Regular",
-                      "textColor": "#2c73d2",
-                      "fontFamily": "roboto_regular",
-                      "textAlign": "center",
-                      "overflow": "clip",
-                      "softwrap": true,
-                      "maxLines": 1
-                    }
-                  },
-                  {
-                    "type": "Text",
-                    "properties": {
-                      "text": "lastSeen",
-                      "width": "wrap_content",
-                      "height": "wrap_content",
-                      "fontSize": 14,
-                      "fontWeight": "Regular",
-                      "textColor": "#2c73d2",
-                      "fontFamily": "roboto_regular",
-                      "textAlign": "center",
-                      "overflow": "clip",
-                      "softwrap": true,
-                      "maxLines": 1
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "Text",
-                "properties": {
-                  "text": "address",
-                  "width": "match_parent",
-                  "height": "wrap_content",
-                  "fontSize": 14,
-                  "fontWeight": "Regular",
-                  "textColor": "#2c73d2",
-                  "fontFamily": "roboto_regular",
-                  "textAlign": "center",
-                  "overflow": "clip",
-                  "softwrap": true,
-                  "maxLines": 6
+                  "height": "6"
                 }
               },
               {
@@ -195,7 +366,9 @@
                   "width": "match_parent",
                   "height": "wrap_content",
                   "horizontalArrangement": "SpaceEvenly",
-                  "padding": 0,
+                  "innerPadding": {
+                    "all": 0
+                  },
                   "verticalAlignment": "Center"
                 },
                 "children": [
@@ -205,16 +378,14 @@
                       "width": "wrap_content",
                       "height": "wrap_content",
                       "backgroundColor": "#FFFFFF",
-                      "padding": 12,
                       "borderStroke": 1,
                       "strokeColor": "#3C3D37",
                       "shape": "roundedCornerShape",
-                      "corner": 12,
+                      "corner": 18,
                       "action": {
-                        "type": "Navigation",
-                        "destination": "profile_screen",
+                        "type": "RemoveCard",
                         "parameters": {
-                          "profileId": "T9286253"
+                          "id": "id"
                         }
                       }
                     },
@@ -238,14 +409,13 @@
                       "width": "wrap_content",
                       "height": "wrap_content",
                       "backgroundColor": "#E9762B",
-                      "padding": 12,
-                      "corner": 12,
+                      "corner": 18,
                       "shape": "roundedCornerShape",
                       "action": {
                         "type": "Navigation",
                         "destination": "ProfileScreen",
                         "parameters": {
-                          "profileId": "T9286253"
+                          "id": "id"
                         }
                       }
                     },

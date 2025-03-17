@@ -1,6 +1,7 @@
 package com.serverdrivenapp.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -8,7 +9,9 @@ import com.serverdrivenapp.presentation.screens.home.HomeScreen
 import com.serverdrivenapp.presentation.screens.profile.ProfileScreen
 
 @Composable
-fun AppNavigation(navHostController: NavHostController) {
+fun AppNavigation(
+    navHostController: NavHostController
+) {
     NavHost(
         navController = navHostController,
         startDestination = Screens.Home.route

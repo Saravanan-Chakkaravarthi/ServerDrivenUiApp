@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.services)
     alias(libs.plugins.apollo.graphQL)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.kapt)
 }
 
 android {
@@ -79,6 +81,21 @@ dependencies {
 
     // GraphQL
     implementation(libs.graphQL.runtime)
+    implementation(kotlin("reflect"))
+
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
+
+//coroutines
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+
+    //retrofit
+    implementation(libs.retrofit)
+    implementation(libs.gson.converter)
+    implementation (libs.logging.interceptor)
 
 }
 

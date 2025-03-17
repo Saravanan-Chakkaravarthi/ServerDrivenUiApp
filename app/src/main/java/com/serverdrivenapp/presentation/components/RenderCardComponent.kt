@@ -26,7 +26,8 @@ fun RenderCardComponent(
                 if (action.type == "Navigation") {
                     handleNavigation(
                         action = action,
-                        navController = navController
+                        navController = navController,
+                        profile = profiles
                     )
                 }
             }
@@ -34,7 +35,7 @@ fun RenderCardComponent(
         modifier = Modifier
             .widthComponent(input = component.properties?.width)
             .heightComponent(input = component.properties?.height)
-            .padding(component.properties?.padding?.dp ?: 0.dp),
+            .applyPadding(component.properties?.innerPadding),
         shape = RoundedCornerShape(component.properties?.corner?.dp ?: 0.dp),
         elevation = CardDefaults.cardElevation(
             defaultElevation = component.properties?.elevation?.dp ?: 0.dp
